@@ -4,10 +4,13 @@ h3 {
     padding: 10px;
 }
 
-.uni {
+#uni {
     color:azure;
     background-color: darkred;
     width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .center {
