@@ -10,6 +10,9 @@ h3 {
     width: 200px;
 }
 
-.img {
-    text-align: center;
-}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
