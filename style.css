@@ -7,4 +7,9 @@ h3 {
 .uni {
     color:azure;
     background-color: darkred;
+    width: 200px;
+}
+
+.img {
+    text-align: center;
 }
