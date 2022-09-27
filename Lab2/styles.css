@@ -2,7 +2,7 @@
 
 #flex-section1 ul {
  display:flex;
- justify-content: center;
+ justify-content: space-evenly;
  /*list-style: none;
  padding:0;*/
 }
