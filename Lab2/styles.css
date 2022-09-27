@@ -1,7 +1,10 @@
 /* Flexbox Part 1 */
 
 #flex-section1 ul {
- display:flex
+ display:flex;
+ align-items: center;
+ justify-content: space-around;
+
 }
 
 /* end Flexbox Part 1 */
