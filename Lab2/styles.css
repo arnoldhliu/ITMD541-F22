@@ -26,16 +26,19 @@
 }
 
 #flex-section2 .item1 {
-	order:0
+	order:0;
+	flex:1;
 }
 
 #flex-section2 .item2 {
-	order:2
+	order:2;
+	flex:1;
 
 }
 
 #flex-section2 .item3 {
-	order:1
+	order:1;
+	flex:1;
 }
 
 /* end Flexbox Part 2 */
