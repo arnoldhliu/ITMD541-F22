@@ -1,0 +1,54 @@
+html, body{
+    height:100%;
+}
+
+.parent-form-tip{
+    display:table; 
+    height:100%; 
+    margin: 0 auto;
+    
+}
+
+.form-tip{
+    display:table-cell; 
+    vertical-align:middle;
+    text-align: center;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+
+.form-control{
+  background-color: burlywood;
+  padding: 10px;
+  border: solid;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (min-width: 600px) {
+.form-tip {
+    width: 500px;
+    color: green;
+}
+}
+
+@media (min-width: 900px) {
+.form-tip {
+    width: 840px;
+    color: yellow;
+}
+}
+
+@media (min-width: 1200px) {
+.form-tip {
+    width: 1120px;
+    color: purple;
+}
+}
+
+@media (min-width: 1500px) {
+.form-tip {
+    width: 1360px;
+    color: blue;
+}
+}

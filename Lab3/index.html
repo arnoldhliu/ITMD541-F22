@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab3style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--    -->
+    <div class="parent-form-tip">
+    <div class="form-tip"> 
+    <form>
+        <h1 style="color:white; background-image: url(Math.jpeg);">Tip Calculator</h1>
+
+        <div class="form-control">
+          <label for="total">Bill Total: </label>
+          <input type="text" name="total" id="total" required>
+        </div>
+        
+        <div class="form-control">
+            <label for="slider">Tip </label>
+            <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+        </div>    
+
+
+        <div class="form-control">
+          <label for="tip_percent">Tip Percentage: </label>
+          <input type="text" name="tip_percent" id="tip_percent" value="0"  disabled>
+        </div>
+        <div class="form-control">
+            <label for="tip_amt">Tip Amount: </label>
+            <input type="text" name="tip_amt" id="tip_amt"  disabled>
+        </div>
+        <div class="form-control">
+            <label for="tot_tip">Total Bill with Tip: </label>
+            <input type="text" name="tot_tip" id="tot_tip"  disabled>
+        </div>
+
+    <h3 style="color:white; background-image: url(Math.jpeg); font-weight: 100; font-style: italic;"> Arnold Liu | Fall '22</h3>
+    </form>  
+    </div>
+    </div>  
+    <script>
+            var e1 = document.getElementById("total")
+            var e2 = document.getElementById("myRange")
+            var e3 = document.getElementById("tip_percent")
+            var e4 = document.getElementById("tip_amt")
+            var e5 = document.getElementById("tot_tip")
+            
+
+            e1.addEventListener("input", total_change)
+
+            e2.addEventListener("input", tip_change)
+
+            function total_change(e) {
+                if (isNaN(e.target.value)) {
+                alert('Not a Number!'); 
+                e1.value = e.target.value;
+                e1.style.color = "red";
+                e4.value = "";
+                e5.value = "";               
+                }
+                else {
+                e1.value = e.target.value;
+                e1.style.color = 'black';
+                e3.value = e2.value;
+                e4.value = ((parseFloat(e1.value) * parseFloat(e2.value))/100).toFixed(2);
+                e5.value = (parseFloat(e1.value) + parseFloat(e4.value)).toFixed(2);  
+                console.log(e3)
+
+                }                
+            }
+
+            function tip_change(e) {
+                if (e1.value == "") {
+                e3.value = e.target.value;
+                e4.value = "";
+                e5.value = "";        
+                }
+                else {
+                e3.value = e.target.value;
+                e4.value = ((parseFloat(e1.value) * parseFloat(e2.value))/100).toFixed(2);
+                e5.value = (parseFloat(e1.value) + parseFloat(e4.value)).toFixed(2);  
+                console.log(e3.value)
+                }
+            }
+
+
+
+
+      </script>  
+</body>
+</html>
