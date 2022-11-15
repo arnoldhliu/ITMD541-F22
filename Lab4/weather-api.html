@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather-api.css">
+    <script type = "text/javascript" src="weather-api.js"></script>
+</head>
+<body>
+    
+    <br/>
+
+    <div style="text-align: center; background-color: chocolate;" id="winfo">
+        <div class='card-lay'>
+            <h1 style="color: orange;">Weather Information</h1>
+            <p>Enter Name or Lattitude,Longitude</p>
+            Location: 
+            <input style="padding: 10px; border-radius: 12px;" placeholder='Chicago' type="text" name="total" id="loc" value=""> 
+            <p id="abc"></p>
+            Or
+            <button id="trackbtn" style="background-color: green; color:white; padding: 10px; border-radius: 12px;">Use Current Location</button>
+    
+            <br/>
+            <p>Results will come below, give few seconds to load</p>
+            <p id="demo"></p>
+            <p>By Arnold Liu | Fall '22</h3>
+        </div>
+    </div>
+
+
+
+
+    <br/>
+
+
+    <div>       
+        <h2 style="text-align: center; color: green;" id="region"></h2>
+    </div>
+
+    <br/>
+    <div style="text-align: center;" id="currentdaytitle">
+    </div>
+
+
+    <br/>
+    <div id="currentday">
+    </div>
+
+    <br/>
+    <div style="text-align: center;" id="nextdaystitle">
+    </div>
+
+    <br/>
+    <div id="nextdays">
+    </div>
+
+    
+</body>
+</html>

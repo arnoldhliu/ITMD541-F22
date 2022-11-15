@@ -1,0 +1,46 @@
+#nextdays,#currentday,#winfo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: auto;
+  }
+
+.card-lay {
+    flex: 1;
+    background-color: #1f262c;
+    margin: 15px 8px;
+    padding: 30px;
+    border-radius: 6px;
+    color: #fff;
+  }
+
+    @media (max-width: 768px) {
+    #nextdays,#currentday, #winfo {
+      display: block;
+    }
+  }
+
+
+    @media (min-width: 600px) {
+    #nextdays,#currentday, #winfo {
+        width: 500px;
+    }
+    }
+    
+    @media (min-width: 900px) {
+    #nextdays,#currentday, #winfo {
+        width: 840px;
+    }
+    }
+    
+    @media (min-width: 1200px) {
+    #nextdays,#currentday, #winfo {
+        width: 1120px;
+    }
+    }
+    
+    @media (min-width: 1500px) {
+    #nextdays,#currentday, #winfo{
+        width: 1360px;
+    }
+    }
